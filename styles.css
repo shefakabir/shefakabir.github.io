@@ -20,6 +20,19 @@ body {
   text-align: center;
   padding: 20px;
   backdrop-filter: blur(5px);
+  position: relative;
+}
+
+.profile-picture {
+  transition: all 0.5s ease;
+  margin-bottom: 15px;
+}
+
+.profile-picture.hidden {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  margin: 0;
 }
 
 .profile-picture img {
@@ -29,6 +42,11 @@ body {
   object-fit: cover;
   border: 3px solid #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+}
+
+.profile-info {
+  transition: all 0.5s ease;
 }
 
 .profile-info h2 {
@@ -41,6 +59,11 @@ body {
   color: #777;
   font-size: 16px;
   margin-bottom: 20px;
+  transition: all 0.5s ease;
+}
+
+.profile-info p.expanded {
+  margin-top: 20px;
 }
 
 .toggle-button-container {
@@ -66,7 +89,7 @@ body {
 }
 
 #toggle-button:hover {
-  background-color: #d10240;
+  background-color: #0288d1;
 }
 
 .social-links {
@@ -112,4 +135,48 @@ body {
 .social-links a:hover {
   transform: translateY(-3px);
   opacity: 0.9;
+}
+
+.bottom-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.bottom-icons.visible {
+  max-height: 50px; /* Adjust based on content height */
+  opacity: 1;
+}
+
+.bottom-icons a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.bottom-icons a.reddit {
+  color: #ff4500;
+}
+
+.bottom-icons a.facebook {
+  color: #1877f2;
+}
+
+.bottom-icons a.whatsapp {
+  color: #25d366;
+}
+
+.bottom-icons a.twitter {
+  color: #1da1f2;
+}
+
+.bottom-icons a:hover {
+  transform: translateY(-3px);
+  opacity: 0.8;
 }
