@@ -125,7 +125,7 @@ body {
 }
 
 .social-links a.facebook {
-  background-color: #1877f2;
+  background-color: #4267B2;
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
@@ -134,7 +134,7 @@ body {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .social-links a.snapchat {
-  background-color: #fffc00;
+  background-color: #fbff00;
   color: #000;
 }
 
