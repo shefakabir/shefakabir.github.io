@@ -6,13 +6,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('https://i.pinimg.com/736x/f8/02/aa/f802aa63db75a2858d46ece3800ac2da.jpg');
+  background-image: url('./images/background.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .profile-card {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 4);
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -101,7 +101,7 @@ body {
 }
 
 .social-links.visible {
-  max-height: 200px; /* Adjust based on content height */
+  max-height: 200px;
   opacity: 1;
 }
 
@@ -116,14 +116,6 @@ body {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.social-links a.anilist {
-  background-color: #02a9ff;
-}
-
-.social-links a.github {
-  background-color: #333;
-}
-
 .social-links a.discord {
   background-color: #7289da;
 }
@@ -131,6 +123,21 @@ body {
 .social-links a.instagram {
   background-color: #e4405f;
 }
+
+.social-links a.facebook {
+  background-color: #1877f2;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.social-links a.snapchat {
+  background-color: #fffc00;
+  color: #000;
+}
+
 
 .social-links a:hover {
   transform: translateY(-3px);
@@ -149,7 +156,7 @@ body {
 }
 
 .bottom-icons.visible {
-  max-height: 50px; /* Adjust based on content height */
+  max-height: 50px;
   opacity: 1;
 }
 
@@ -160,20 +167,14 @@ body {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.bottom-icons a.reddit {
-  color: #ff4500;
-}
-
 .bottom-icons a.facebook {
-  color: #1877f2;
-}
-
-.bottom-icons a.whatsapp {
-  color: #25d366;
-}
-
-.bottom-icons a.twitter {
-  color: #1da1f2;
+  background-color: #e4405f;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .bottom-icons a:hover {
